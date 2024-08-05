@@ -1,10 +1,12 @@
 import React, { useContext } from 'react'
 import { JunoContext } from '../../context/JunoContext'
+import './Carrito.css'
 
 const Carrito = () => {
-    const { carrito, removerItem, vaciarCarrito } = useContext(JunoContext)
+    const { carrito, removerItem, vaciarCarrito } = useContext(JunoContext);
+
     return (
-        <div>
+        <div className='contenedor-carrito'>
             <h2>Carrito de Compras</h2>
             {carrito.length === 0 ? (
                 <p>No hay productos en el carrito.</p>
@@ -12,8 +14,8 @@ const Carrito = () => {
                 <ul>
                     {carrito.map(product => (
                         <li key={product.id}>
-                            {product.title} - ${product.price} x {product.quantity}
-                            <button onClick={() => removerItem(product.id)}>Eliminar</button>
+                           <p className='descripcion'> {product.title} - ${product.price} x {product.quantity}</p>
+                            <button onClick={() => removerItem(product.id)}>Eliminar 1</button>
                         </li>
                     ))}
                 </ul>
