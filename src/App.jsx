@@ -24,7 +24,7 @@ function App() {
 
   return (
     <CarritoProvider>
-      <BrowserRouter>
+      <BrowserRouter  basename={process.env.PUBLIC_URL}>
         <Header />
 
         <Routes>
