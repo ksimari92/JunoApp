@@ -40,10 +40,11 @@ export const CarritoProvider = ({ children }) => {
         setCarrito([]);
     }
 
-    const cantidadTotal = carrito.reduce((total, item) => total + item.quantity, 0)
+    const cantidadTotal = carrito.reduce((total, item) => total + item.quantity, 0);
 
+    const totalPrecio = carrito.reduce((total, item) => total + item.price * item.quantity, 0);
     return (
-        <JunoContext.Provider value={{ carrito, agregarAlCarrito, removerItem, vaciarCarrito, cantidadTotal }}>
+        <JunoContext.Provider value={{ carrito, agregarAlCarrito, removerItem, vaciarCarrito, cantidadTotal, totalPrecio }}>
             {children}
         </JunoContext.Provider>
     )

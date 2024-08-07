@@ -3,7 +3,7 @@ import { JunoContext } from '../../context/JunoContext'
 import './Carrito.css'
 
 const Carrito = () => {
-    const { carrito, removerItem, vaciarCarrito } = useContext(JunoContext);
+    const { carrito, removerItem, vaciarCarrito, totalPrecio } = useContext(JunoContext);
 
     return (
         <div className='contenedor-carrito'>
@@ -14,12 +14,14 @@ const Carrito = () => {
                 <ul>
                     {carrito.map(product => (
                         <li key={product.id}>
-                           <p className='descripcion'> {product.title} - ${product.price} x {product.quantity}</p>
+                            <p className='descripcion'> {product.title} - ${product.price} x {product.quantity}</p>
                             <button onClick={() => removerItem(product.id)}>Eliminar 1</button>
                         </li>
                     ))}
                 </ul>
             )}
+            <h2>Total: ${totalPrecio}</h2>
+
             {carrito.length > 0 && <button onClick={vaciarCarrito}>Vaciar Carrito</button>}
         </div>
     )

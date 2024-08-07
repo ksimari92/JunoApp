@@ -24,7 +24,7 @@ function App() {
 
   return (
     <CarritoProvider>
-      <BrowserRouter  basename={process.env.PUBLIC_URL}>
+      <BrowserRouter  >
         <Header />
 
         <Routes>
@@ -32,8 +32,6 @@ function App() {
           <Route path="/productos" element={<Productos productos={productos} />} />
           <Route path="/productos/:id" element={<ProductoDetalle />} />
           <Route path="/carrito" element={<Carrito />} />
-
-
         </Routes>
 
         <Footer />
