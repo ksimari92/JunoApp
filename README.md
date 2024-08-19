@@ -1,8 +1,13 @@
-# React + Vite
+#Juno App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Es un proyecto basado en un emprendimiento propio, donde me dedico a la venta online de calzado importado.
 
-Currently, two official plugins are available:
+El siguienta esta realizado con React JS y Bootstrap.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Las funcionalidades de la aplicacion son las siguientes:
+
+- Ver productos y detalles de los mismos.
+- Opcion de agregar y eliminar productos del carrito.
+
+  El proyecto todavia esta en construccion, solo la parte de Front End. Se consumen datos desde la API FakeStoreAPI con idea a futuro de agregarle un BackEnd con productos propios del emprendimiento, y tambien se creara un login para poder comprar registrado. 
+  
