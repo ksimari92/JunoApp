@@ -1,7 +1,7 @@
 .contenedor-carrito {
-    width: 50%;
+    width: 90%;
     margin: 20px auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -9,19 +9,21 @@
 }
 
 
-.contenedor-carrito  h2 {
+.contenedor-carrito h2 {
     text-align: center;
     color: #333;
+    font-size: 1.2em;
 }
 
 
 .contenedor-carrito p {
     text-align: center;
     color: #777;
+    font-size: 0.9em;
 }
 
 
-.contenedor-carrito  ul {
+.contenedor-carrito ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -36,18 +38,42 @@
 }
 
 .contenedor-carrito ul li .descripcion {
-    width: 70%;
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 10px; 
 }
+
 .contenedor-carrito button {
-    padding: 5px 10px;
-    color: #fff;
+    padding: 8px 12px;
+        color: #fff;
     background-color: black;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
+    max-width: 100px; 
 }
 
 .contenedor-carrito button:hover {
     background-color: grey;
 }
 
+@media (min-width: 768px) {
+    .contenedor-carrito {
+        width: 50%; /* Configuración original para pantallas más grandes */
+        padding: 20px;
+    }
+
+    .contenedor-carrito ul li {
+        flex-direction: row; /* Vuelve a fila en pantallas más grandes */
+    }
+
+    .contenedor-carrito ul li .descripcion {
+        width: 70%; /* Configuración original para pantallas más grandes */
+        text-align: left; /* Alineación original */
+    }
+
+    .contenedor-carrito button {
+        width: auto; /* Botones vuelven a tamaño original */
+    }
+}

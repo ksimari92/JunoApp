@@ -55,3 +55,18 @@
     background-color: darkgray;
   }
   
+
+
+@media (min-width: 320px) {
+  .card-detalle {
+    width: 50%; 
+  }
+
+  .card-detalle img {
+    width: 50%;
+  }
+
+  .card-detalle button {
+    width:80%;
+  }
+}
