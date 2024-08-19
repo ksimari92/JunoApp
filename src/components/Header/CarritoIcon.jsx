@@ -9,7 +9,7 @@ const CarritoIcon = () => {
   return (
     <Link to={'/carrito'} style={{textDecoration:'none'}}>
     <div style={{marginRight:'10px'}}>
-        <img src="./public/img/cesta-de-la-compra.png" alt="Cart" style={{width: '2em'}} /><span  style={{fontSize: '1em', padding: '5px', marginLeft:'-10px', backgroundColor:'black', color: 'white', borderRadius:'40%'}}>{cantidadTotal}</span>
+        <img src="/public/img/cesta-de-la-compra.png" alt="Cart" style={{width: '2em'}} /><span  style={{fontSize: '1em', padding: '5px', marginLeft:'-10px', backgroundColor:'black', color: 'white', borderRadius:'40%'}}>{cantidadTotal}</span>
     </div>
     </Link>
   )
