@@ -1,0 +1,41 @@
+.footer {
+    background-color: #cfd9e2;
+    color: #130a0a;
+    margin-top: 1rem;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #130a0a;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+.contact-info, .address {
+    font-size: 14px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #495057;
+    padding-top: 10px;
+    font-size: 14px;
+}

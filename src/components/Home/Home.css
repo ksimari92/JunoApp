@@ -40,5 +40,6 @@
         width:80%;
         height: 250px;
         object-fit: cover;
+        margin-top: 1em;
     }
 }

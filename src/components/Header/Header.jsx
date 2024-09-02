@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,19 +10,20 @@ const Header = () => {
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container>
                     <Navbar.Brand href="/">Juno Clothes</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <div className="d-flex align-items-center ms-auto">
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <CarritoIcon className="ms-2" />
+                    </div>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <CarritoIcon />
                             <Nav.Link href='/'>Home</Nav.Link>
                             <Nav.Link href="/productos">Productos</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
-
                 </Container>
             </Navbar>
         </header>
-    )
+    );
 }
 
-export default Header
+export default Header;

@@ -7,7 +7,7 @@ const SobreNosotras = () => {
             <h2>Sobre nosotras</h2>
 
             <div className='container-texto'>
-                <p>Siempre hemos soñado con emprender juntas. Karen y yo, Luciana, somos amigas desde la infancia y compartimos una pasión por la moda y un deseo común de iniciar un negocio propio. En 2022, decidimos dar el paso y lanzamos nuestro primer proyecto conjunto: una tienda en línea dedicada a la venta de réplicas importadas de zapatillas.</p>
+                <p>Siempre hemos soñado con emprender juntas. Karen y yo, Luciana, somos cuñadas y compartimos una pasión por la moda y un deseo común de iniciar un negocio propio. En mayo del 2024, decidimos dar el paso y lanzamos nuestro primer proyecto conjunto: una tienda en línea dedicada a la venta de réplicas importadas de zapatillas.</p>
 
                 <p>Inspiradas por la creciente demanda de calzado de moda a precios accesibles, comenzamos a investigar proveedores internacionales que pudieran ofrecer productos de alta calidad. Tras meses de planificación y búsqueda, logramos establecer relaciones con fabricantes confiables y lanzamos nuestra tienda virtual.</p>
 
